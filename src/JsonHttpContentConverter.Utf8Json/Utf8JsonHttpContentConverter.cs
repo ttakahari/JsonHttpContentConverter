@@ -25,7 +25,7 @@ namespace JsonHttpContentConverter.Utf8Json
         /// <summary>
         /// Create a new instance of <see cref="Utf8JsonHttpContentConverter"/> with an instance of <see cref="IJsonFormatterResolver"/>.
         /// </summary>
-        /// <param name="settings">An instance of <see cref="IJsonFormatterResolver"/>.</param>
+        /// <param name="resolver">An instance of <see cref="IJsonFormatterResolver"/>.</param>
         public Utf8JsonHttpContentConverter(IJsonFormatterResolver resolver)
             => _resolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
 
