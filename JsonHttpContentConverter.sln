@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83402AE5-C60
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonHttpContentConverter", "src\JsonHttpContentConverter\JsonHttpContentConverter.csproj", "{A1A5DD5D-C062-42D4-BE86-6E1511B0E617}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonHttpContentConverter.JsonNet", "src\JsonHttpContentConverter.JsonNet\JsonHttpContentConverter.JsonNet.csproj", "{1046106A-60D8-4894-9D84-7B0AA7A3D254}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{A1A5DD5D-C062-42D4-BE86-6E1511B0E617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1A5DD5D-C062-42D4-BE86-6E1511B0E617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1A5DD5D-C062-42D4-BE86-6E1511B0E617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1046106A-60D8-4894-9D84-7B0AA7A3D254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1046106A-60D8-4894-9D84-7B0AA7A3D254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1046106A-60D8-4894-9D84-7B0AA7A3D254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1046106A-60D8-4894-9D84-7B0AA7A3D254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
