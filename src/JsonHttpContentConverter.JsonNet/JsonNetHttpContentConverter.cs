@@ -8,23 +8,23 @@ namespace JsonHttpContentConverter.JsonNet
     /// <summary>
     /// Convert between an object and <see cref="HttpContent"/> that includes JSON with using Json.NET.
     /// </summary>
-    public class JsonNetHttpConverter : IJsonHttpContentConverter
+    public class JsonNetHttpContentConverter : IJsonHttpContentConverter
     {
         private readonly JsonSerializerSettings _settings;
 
         /// <summary>
-        /// Create a new instance of <see cref="JsonNetHttpConverter"/>.
+        /// Create a new instance of <see cref="JsonNetHttpContentConverter"/>.
         /// </summary>
-        public JsonNetHttpConverter()
+        public JsonNetHttpContentConverter()
             : this(new JsonSerializerSettings())
         {
         }
 
         /// <summary>
-        /// Create a new instance of <see cref="JsonNetHttpConverter"/> with an instance of <see cref="JsonSerializerSettings"/>.
+        /// Create a new instance of <see cref="JsonNetHttpContentConverter"/> with an instance of <see cref="JsonSerializerSettings"/>.
         /// </summary>
         /// <param name="settings">An instance of <see cref="JsonSerializerSettings"/>.</param>
-        public JsonNetHttpConverter(JsonSerializerSettings settings)
+        public JsonNetHttpContentConverter(JsonSerializerSettings settings)
             => _settings = settings ?? throw new ArgumentNullException(nameof(settings));
 
         /// <inheritdoc />
