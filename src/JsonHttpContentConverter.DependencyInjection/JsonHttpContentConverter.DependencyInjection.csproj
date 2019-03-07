@@ -1,7 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <Description>Extension that resolves an instance of JsonHttpContentConverter with Microsoft.Extensions.DependencyInjection.</Description>
+        <Copyright>Copyright t.takahari 2019</Copyright>
+        <AssemblyTitle>JsonHttpContentConverter.DependencyInjection</AssemblyTitle>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <Authors>t.takahari</Authors>
         <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <AssemblyName>JsonHttpContentConverter.DependencyInjection</AssemblyName>
+        <PackageId>JsonHttpContentConverter.DependencyInjection</PackageId>
+        <PackageTags>HttpClient;Json;HttpContent;DependencyInjection</PackageTags>
+        <PackageProjectUrl>https://github.com/ttakahari/JsonHttpContentConverter</PackageProjectUrl>
+        <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/ttakahari/JsonHttpContentConverter</RepositoryUrl>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
         <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
