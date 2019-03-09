@@ -36,29 +36,31 @@ var foo = new Foo { Bar = "AAA", Baz = 1};
 var converter = new JsonNetHttpContentConverter();
 
 // Convert to HttpContent.
-var content = converter.ToHttpContent(foo);
+var content = converter.ToJsonHttpContent(foo);
 
 // Post data.
 var client = new HttpClient();
 var response = await client.PostAsync("[Your POST URL]", content);
 
 // Convert from HttpContent.
-var result = await converter.FromHttpContent<Foo>(response.Content);
+var result = await converter.FromJsonHttpContent<Foo>(response.Content);
 ```
 
 ## Dependency Injection
 
 JsonHttpContentConverter has an extension that resolves an instance of IJsonHttpContentConverter with Microsoft.Extensions.DependencyInjection.
 
+Use a NuGet package [JsonHttpContentConverter.DependencyInjection](https://www.nuget.org/packages/JsonHttpContentConverter.DependencyInjection/).
+
 ```csharp
 var services = new ServiceCollection();
 
-// add JsonHttpContentConverter.
+// Add JsonHttpContentConverter.
 services.AddJsonHttpContentConverter<JsonNetHttpContentConverter>();
 
 var service = services.BuildServiceProvider();
 
-// resolve JsonHttpContentConverter.
+// Resolve JsonHttpContentConverter.
 var converter = service.GetService<IJsonHttpContentConverter>();
 ```
 
