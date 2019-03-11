@@ -10,7 +10,7 @@ namespace JsonHttpContentConverter.Utf8Json
     /// <summary>
     /// Convert between an object and <see cref="HttpContent"/> that includes JSON with using Utf8Json.
     /// </summary>
-    public class Utf8JsonHttpContentConverter
+    public class Utf8JsonHttpContentConverter : IJsonHttpContentConverter
     {
         private readonly IJsonFormatterResolver _resolver;
 
